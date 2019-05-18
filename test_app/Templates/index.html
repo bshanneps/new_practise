@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset = "UTF-8">
+       <title>Index</title>
+       {% load static %}
+       <link href = "{%static '/test_style.css' %}" rel = "stylesheet">
+       <script src = "{%static '/test_script.js' %}" type = "text/javascript"></script>
+</head>
+<body>
+<h2>Welome to Django!! {{name}}</h2>
+<h2>
+    {% if name == 'Ram'%}
+    You are a student
+    {%elif name == 'Shyam' %}
+    You are a job holder
+    {% else %}
+    You are unemployed.
+    {%endif%}
+</h2>
+</body>   
+</html>
